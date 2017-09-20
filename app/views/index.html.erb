@@ -1,0 +1,16 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Blog Post App</title>
+</head>
+<body>
+  <h1>Hello World</h1>
+  <p>I am building an app to look at blog posts</p>
+  <a href='/posts'>See All Posts</a>
+  <% @posts.each do |post| %>
+      <ol> <%= post.title %> </ol>
+  <% end %>
+
+</body>
+</html>
